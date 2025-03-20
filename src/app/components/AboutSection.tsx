@@ -8,7 +8,7 @@ export const AboutSection = () => {
     <section className="pb-20 lg:pb-44">
       <div className="container">
         <TextAndImagesSection
-          subtitle="Built by Veteran Industry Leaders Rex Clancy and Wayne Gooding"
+          subtitle="Built by Veteran Industry Leaders"
           title="About Us"
           paragraph={
             <>
