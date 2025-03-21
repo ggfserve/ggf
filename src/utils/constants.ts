@@ -130,5 +130,13 @@ export const _industries = [
     link: '/industries/recreational',
     linkTitle: 'Recreational Services',
     img: '/images/industries/recreational/banner.png'
+  },
+  {
+    title: 'New Page',
+    description:
+      "Keep recreational facilities inviting and clean with Go Green's eco-conscious cleaning services, from gyms to public parks and community centers.",
+    link: '/industries/newpage',
+    linkTitle: 'New Page',
+    img: '/images/industries/recreational/banner.png'
   }
 ];
