@@ -54,8 +54,8 @@ export const MainSection: React.FC<MainSectionProps> = async ({
 							<Parallax>
 								<Leaf
 									className={`absolute bottom-10  ${reverse
-											? 'right-0 md:-right-5 '
-											: ' left-0 md:-left-5 rotate-90'
+										? 'right-0 md:-right-5 '
+										: ' left-0 md:-left-5 rotate-90'
 										}`}
 									size={'large'}
 								/>

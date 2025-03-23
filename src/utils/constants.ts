@@ -70,7 +70,70 @@ export const _services = [
       'Maintain your building`s exterior with Go Green`s Outdoor Building Maintenance Services, ensuring a clean and professional appearance year-round.',
     link: '/services/outdoor-building-maintenance',
     linkTitle: 'Outdoor Building Maintenance Services'
+  }, {
+    title: 'Carpet Steam Cleaning',
+    description:
+      'Deep carpet steam cleaning services that eliminate stains, allergens, and dirt using eco-friendly technology for healthier indoor spaces.',
+    link: '/services/carpet-steam-cleaning',
+    linkTitle: 'Carpet Steam Cleaning Services'
+  },
+  {
+    title: 'Residential Cleaning',
+    description:
+      'Trusted residential cleaning solutions tailored to your schedule, ensuring a spotless home using safe and effective green products.',
+    link: '/services/residential-cleaning',
+    linkTitle: 'Residential Cleaning Services'
+  },
+  {
+    title: 'Janitorial Cleaning',
+    description:
+      'Comprehensive janitorial services for all facility types, keeping workspaces clean, hygienic, and well-maintained with minimal disruption.',
+    link: '/services/janitorial-cleaning',
+    linkTitle: 'Janitorial Cleaning Services'
+  },
+  {
+    title: 'Window Cleaning',
+    description:
+      'Professional window cleaning that leaves glass spotless and streak-free, enhancing natural light and curb appeal for any property.',
+    link: '/services/window-cleaning',
+    linkTitle: 'Window Cleaning Services'
+  },
+  {
+    title: 'Junk Removal',
+    description:
+      'Fast and responsible junk removal services for residential and commercial properties, including furniture, debris, and more.',
+    link: '/services/junk-removal',
+    linkTitle: 'Junk Removal Services'
+  },
+  {
+    title: 'Building Pressure Washing',
+    description:
+      'Restore the look of your building with high-quality pressure washing that removes dirt, mold, and grime from all surfaces.',
+    link: '/services/building-pressure-washing',
+    linkTitle: 'Building Pressure Washing Services'
+  },
+  {
+    title: 'Garage & Warehouse Cleaning',
+    description:
+      'Heavy-duty cleaning for garages and warehouses, ensuring safety, cleanliness, and operational efficiency with industrial-grade equipment.',
+    link: '/services/garage-warehouse-cleaning',
+    linkTitle: 'Garage & Warehouse Cleaning Services'
+  },
+  {
+    title: 'Underground Parkade & Lot Cleaning',
+    description:
+      'Thorough cleaning services for underground parkades and lots, including sweeping and power washing for a safer, cleaner facility.',
+    link: '/services/parkade-lot-cleaning',
+    linkTitle: 'Underground Parkade & Lot Cleaning Services'
+  },
+  {
+    title: 'Driveway Pressure Wash & Sealing',
+    description:
+      'Enhance and protect your driveway with expert pressure washing and sealing to prevent damage and improve curb appeal.',
+    link: '/services/driveway-pressure-washing-sealing',
+    linkTitle: 'Driveway Pressure Wash & Sealing Services'
   }
+
 ];
 
 export const _industries = [
@@ -129,14 +192,6 @@ export const _industries = [
       "Keep recreational facilities inviting and clean with Go Green's eco-conscious cleaning services, from gyms to public parks and community centers.",
     link: '/industries/recreational',
     linkTitle: 'Recreational Services',
-    img: '/images/industries/recreational/banner.png'
-  },
-  {
-    title: 'New Page',
-    description:
-      "Keep recreational facilities inviting and clean with Go Green's eco-conscious cleaning services, from gyms to public parks and community centers.",
-    link: '/industries/newpage',
-    linkTitle: 'New Page',
     img: '/images/industries/recreational/banner.png'
   }
 ];

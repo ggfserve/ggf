@@ -122,6 +122,60 @@ export const getPageMeta = (slug: string): PageMeta => {
       description =
         "Navigate GoGreen's terms page for a clear understanding of our services, policies, and commitments.";
       break;
+      case '/services/carpet-steam-cleaning':
+        title = 'Deep Carpet Steam Cleaning Services - GoGreen';
+        description =
+          'GoGreen offers powerful carpet steam cleaning solutions that eliminate tough stains, dirt, and allergens using eco-friendly steam technology.';
+        break;
+        
+      case '/services/residential-cleaning':
+        title = 'Professional Residential Cleaning Services - GoGreen';
+        description =
+          'Keep your home fresh and spotless with GoGreen’s residential cleaning services. Safe, eco-friendly, and tailored to your lifestyle.';
+        break;
+  
+      case '/services/janitorial-cleaning':
+        title = 'Comprehensive Janitorial Services - GoGreen';
+        description =
+          'Ensure a clean, hygienic, and welcoming facility with GoGreen’s reliable janitorial services, powered by green-certified products.';
+        break;
+  
+      case '/services/window-cleaning':
+        title = 'Streak-Free Window Cleaning Services - GoGreen';
+        description =
+          'Brighten your property with professional window cleaning from GoGreen. Spotless results using safe and eco-conscious methods.';
+        break;
+  
+      case '/services/junk-removal':
+        title = 'Eco-Friendly Junk Removal Services - GoGreen';
+        description =
+          'Clear out clutter responsibly with GoGreen’s junk removal services. Fast, affordable, and environmentally mindful.';
+        break;
+  
+      case '/services/building-pressure-washing':
+        title = 'Building Pressure Washing Services - GoGreen';
+        description =
+          'Renew the look of your property with GoGreen’s pressure washing services. Effective on grime, stains, and buildup across all surfaces.';
+        break;
+  
+      case '/services/garage-warehouse-cleaning':
+        title = 'Garage & Warehouse Cleaning Services - GoGreen';
+        description =
+          'Maintain safe and efficient operations with GoGreen’s heavy-duty garage and warehouse cleaning services tailored for industrial needs.';
+        break;
+  
+      case '/services/parkade-lot-cleaning':
+        title = 'Underground Parkade & Lot Cleaning - GoGreen';
+        description =
+          'GoGreen provides detailed cleaning for underground parkades and parking lots, including sweeping, scrubbing, and pressure washing.';
+        break;
+  
+      case '/services/driveway-pressure-washing-sealing':
+        title = 'Driveway Pressure Washing & Sealing - GoGreen';
+        description =
+          'Protect and enhance your driveway with GoGreen’s pressure washing and sealing services. Long-lasting protection and instant curb appeal.';
+        break;
+  
     default:
       title = 'GoGreen Facilities Services - Edmonton Janitorial Services';
       description =
