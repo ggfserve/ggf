@@ -19,46 +19,29 @@ export default async function Page() {
       content: {
         title: 'Residential Junk Removal',
         description:
-          'Clear out your basement, garage, or yard with our efficient and eco-responsible junk removal service.',
-        img: '/images/services/cleaning/1.png'
+          'We help homeowners remove old furniture, appliances, electronics, yard debris, and general clutter quickly and efficiently. Our team handles everything from loading to eco-friendly disposal or donation.',
+        img: '/images/services/junk-removal/1.jpg'
       }
     },
     {
-      title: 'Commercial Waste Pickup',
+      title: 'Commercial Cleanouts',
       content: {
-        title: 'Commercial Waste Pickup',
+        title: 'Commercial Cleanouts',
         description:
-          'Offices, warehouses, and retail stores trust GoGreen to remove old furniture, electronics, and debris safely.',
-        img: '/images/services/cleaning/2.jpg'
-      }
-    },
-    {
-      title: 'Construction Debris Cleanup',
-      content: {
-        title: 'Construction Debris Cleanup',
-        description:
-          'We quickly clear leftover construction materials and job site mess, keeping your projects clean and safe.',
-        img: '/images/services/cleaning/3.jpg'
-      }
-    },
-    {
-      title: 'Recycling & Disposal',
-      content: {
-        title: 'Recycling & Disposal',
-        description:
-          'We sort, recycle, and dispose of waste responsibly, following local regulations and reducing landfill use.',
-        img: '/images/services/cleaning/4.jpg'
+          'From offices and retail spaces to warehouses and construction sites, we offer full-service junk removal for commercial properties. Ideal for relocations, renovations, or day-to-day waste management.',
+        img: '/images/services/junk-removal/2.jpg'
       }
     }
   ];
 
+
   return (
     <>
       <MainSection
-        title="Junk Removal"
-        subTitle="Fast, Responsible & Stress-Free"
-        text="Clear out your space the eco-friendly way. GoGreen provides full-service junk removal for homes, businesses, and construction sites across Edmonton."
-        imgSrc="/images/services/cleaning/main.png"
+        title="Professional Junk Removal Services"
+        subTitle="Fast, Responsible, and Eco-Friendly Waste Disposal"
+        text="Clear out unwanted clutter quickly and responsibly with GoGreen’s professional junk removal services. Whether you're dealing with post-renovation debris, old furniture, office cleanouts, or general household waste, our team handles the heavy lifting and ensures proper disposal or recycling—helping you reclaim your space and protect the environment."
+        imgSrc="/images/services/junk-removal/main.jpg" // ảnh tạm thời
       />
       <TabsSection items={Items} />
       <ServicesSection

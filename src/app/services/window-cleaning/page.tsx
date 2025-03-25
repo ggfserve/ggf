@@ -15,51 +15,44 @@ export const metadata: Metadata = getPageMeta('/services/window-cleaning');
 export default async function Page() {
   const Items = [
     {
-      title: 'Interior Window Cleaning',
+      title: 'Interior & Exterior Window Cleaning',
       content: {
-        title: 'Interior Window Cleaning',
+        title: 'Interior & Exterior Window Cleaning',
         description:
-          'We clean smudges, fingerprints, and buildup from interior glass with streak-free solutions and microfiber tools.',
-        img: '/images/services/cleaning/1.png'
+          'We thoroughly clean both sides of your windows—including frames, sills, and tracks—leaving them spotless and streak-free. Perfect for homes, offices, storefronts, and buildings of all sizes.',
+        img: '/images/services/window-cleaning/1.jpg'
       }
     },
     {
-      title: 'Exterior Window Washing',
+      title: 'High-Rise & Multi-Storey Access',
       content: {
-        title: 'Exterior Window Washing',
+        title: 'High-Rise & Multi-Storey Access',
         description:
-          'We safely clean exterior windows using poles, lifts, or rope access—leaving your building sparkling clean.',
-        img: '/images/services/cleaning/2.jpg'
+          'Our trained technicians use professional-grade equipment, ladders, and safety harnesses to clean hard-to-reach and upper-floor windows—safely and efficiently, with minimal disruption.',
+        img: '/images/services/window-cleaning/2.jpg'
       }
     },
     {
-      title: 'Post-Construction Cleaning',
+      title: 'Eco-Friendly & Streak-Free Finish',
       content: {
-        title: 'Post-Construction Cleaning',
+        title: 'Eco-Friendly & Streak-Free Finish',
         description:
-          'We remove paint overspray, dust, and residue from newly installed or renovated windows without scratching the surface.',
-        img: '/images/services/cleaning/3.jpg'
-      }
-    },
-    {
-      title: 'Hard Water & Mineral Removal',
-      content: {
-        title: 'Hard Water & Mineral Removal',
-        description:
-          'Our specialists eliminate mineral deposits and water stains that affect glass clarity and appearance.',
-        img: '/images/services/cleaning/4.jpg'
+          'We use purified water systems and biodegradable cleaning solutions that lift dirt and residue without leaving streaks or harming plants, pets, or surfaces.',
+        img: '/images/services/windowcleaning/3.jpg'
       }
     }
   ];
 
+
   return (
     <>
       <MainSection
-        title="Window Cleaning"
-        subTitle="Clear Views, Inside & Out"
-        text="Let the light shine through with GoGreen’s professional window cleaning. Our eco-safe methods deliver streak-free, spotless results every time."
-        imgSrc="/images/services/cleaning/main.png"
+        title="Professional Window Cleaning Services"
+        subTitle="Crystal-Clear Results for Homes and Businesses"
+        text="Let the light in with GoGreen’s expert window cleaning services. We clean interior and exterior windows, skylights, glass doors, and facades using streak-free techniques and eco-safe products. Whether it’s a residential home, office, or multi-storey commercial building, our experienced team ensures spotless clarity, improved curb appeal, and long-lasting shine."
+        imgSrc="/images/services/window-cleaning/main.jpg" // ảnh tạm thời
       />
+
       <TabsSection items={Items} />
       <ServicesSection
         items={_services}

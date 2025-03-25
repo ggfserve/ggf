@@ -15,50 +15,51 @@ export const metadata: Metadata = getPageMeta('/services/driveway-pressure-washi
 export default async function Page() {
   const Items = [
     {
-      title: 'Deep Pressure Cleaning',
+      title: 'Deep Driveway Cleaning',
       content: {
-        title: 'Deep Pressure Cleaning',
+        title: 'Deep Driveway Cleaning',
         description:
-          'We remove years of dirt, oil stains, moss, and grime using powerful, yet safe, pressure washing to restore your driveway’s clean appearance.',
+          'We use high-powered pressure washing to remove years of dirt, tire marks, algae, and oil buildup from concrete, asphalt, and stone driveways. Our process restores original color and texture without damaging the surface.',
         img: '/images/services/cleaning/1.png'
       }
     },
     {
-      title: 'Sealing & Protection',
+      title: 'Eco-Safe Degreasers & Stain Removal',
       content: {
-        title: 'Sealing & Protection',
+        title: 'Eco-Safe Degreasers & Stain Removal',
         description:
-          'After cleaning, we apply a high-grade sealant to protect your driveway from water, weather, and oil damage—keeping it looking fresh longer.',
+          'Our biodegradable cleaning solutions safely lift oil, rust, and automotive fluid stains without harming your landscaping or driveway surface. We prioritize eco-friendly results without sacrificing power.',
         img: '/images/services/cleaning/2.jpg'
       }
     },
     {
-      title: 'Concrete & Asphalt',
+      title: 'High-Performance Sealing',
       content: {
-        title: 'Concrete & Asphalt',
+        title: 'High-Performance Sealing',
         description:
-          'Whether your driveway is concrete, asphalt, or interlock, we tailor our process to preserve its durability while enhancing appearance.',
+          'Once cleaned, we apply a premium-grade sealer that enhances appearance and forms a protective barrier against water, UV rays, salt, and stains—prolonging the lifespan of your driveway.',
         img: '/images/services/cleaning/3.jpg'
       }
     },
     {
-      title: 'Curb Appeal Boost',
+      title: 'Slip Resistance & Weather Protection',
       content: {
-        title: 'Curb Appeal Boost',
+        title: 'Slip Resistance & Weather Protection',
         description:
-          'A clean, well-maintained driveway instantly boosts the visual appeal of your property. Make a great first impression with GoGreen.',
+          'Our sealing process not only boosts durability but also improves safety by increasing traction on wet surfaces. Protect your driveway year-round from Edmonton’s harsh climate and freeze-thaw cycles.',
         img: '/images/services/cleaning/4.jpg'
       }
     }
   ];
 
+
   return (
     <>
       <MainSection
         title="Driveway Pressure Washing & Sealing"
-        subTitle="Protect and Refresh Your Driveway"
-        text="GoGreen provides expert driveway pressure washing and sealing services, removing tough stains and applying lasting protection for a cleaner, safer, and longer-lasting surface."
-        imgSrc="/images/services/cleaning/main.png"
+        subTitle="Revive and Protect Your Driveway with Professional Cleaning and Long-Lasting Sealing"
+        text="Enhance your property’s curb appeal and extend the life of your driveway with GoGreen’s expert pressure washing and sealing services. We remove dirt, grime, oil stains, and mildew from concrete, asphalt, and paver surfaces, then apply high-quality sealants to protect against moisture, UV damage, and daily wear. Safe, effective, and eco-conscious—our service is ideal for both residential and commercial properties."
+        imgSrc="/images/services/cleaning/main.png" // ảnh tạm thời
       />
       <TabsSection items={Items} />
       <ServicesSection

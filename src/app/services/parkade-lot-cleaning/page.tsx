@@ -15,50 +15,33 @@ export const metadata: Metadata = getPageMeta('/services/parkade-lot-cleaning');
 export default async function Page() {
   const Items = [
     {
-      title: 'Sweeping & Debris Removal',
+      title: 'Underground Parkade Cleaning',
       content: {
-        title: 'Sweeping & Debris Removal',
+        title: 'Underground Parkade Cleaning',
         description:
-          'We remove sand, leaves, litter, and other debris to ensure a clean and professional appearance in parkades and lots.',
-        img: '/images/services/cleaning/1.png'
+          'We provide deep cleaning for enclosed parking structures, removing buildup of oil, dust, and vehicle residue. Our low-noise equipment is ideal for residential and commercial parkades where cleanliness and minimal disruption are key.',
+        img: '/images/services/parkade-lot-cleaning/1.jpg'
       }
     },
     {
-      title: 'Oil Stain Cleaning',
+      title: 'Outdoor Lot Sweeping & Washing',
       content: {
-        title: 'Oil Stain Cleaning',
+        title: 'Outdoor Lot Sweeping & Washing',
         description:
-          'We lift oil and fluid stains from concrete or asphalt using safe and effective degreasers that restore the surface.',
-        img: '/images/services/cleaning/2.jpg'
+          'Our crews sweep and pressure wash outdoor lots to remove gravel, mud, litter, and oil stains. This not only improves appearance but also reduces liability risks from slippery surfaces and poor drainage.',
+        img: '/images/services/parkade-lot-cleaning/2.jpg'
       }
     },
-    {
-      title: 'Pressure Washing',
-      content: {
-        title: 'Pressure Washing',
-        description:
-          'Our pressure washers scrub away dirt, salt, and residue, improving safety and traction in parking areas.',
-        img: '/images/services/cleaning/3.jpg'
-      }
-    },
-    {
-      title: 'Drain & Grate Clearing',
-      content: {
-        title: 'Drain & Grate Clearing',
-        description:
-          'We prevent flooding and water buildup by cleaning out clogged drains, grates, and surrounding areas.',
-        img: '/images/services/cleaning/4.jpg'
-      }
-    }
   ];
+
 
   return (
     <>
       <MainSection
-        title="Underground Parkade & Lot Cleaning"
-        subTitle="Cleaner Lots. Safer Spaces."
-        text="GoGreen keeps your underground and surface lots spotless and hazard-free. We sweep, scrub, and clean with detail and eco-conscious care."
-        imgSrc="/images/services/cleaning/main.png"
+        title="Parkade & Lot Cleaning Services"
+        subTitle="Maintain Clean, Safe, and Professional Parking Areas"
+        text="GoGreen offers specialized cleaning services for underground parkades, outdoor parking lots, and multi-level garages. Our team removes dirt, oil stains, litter, and hazardous debris using industrial-grade sweepers, scrubbers, and pressure washing systems. With a focus on safety, efficiency, and environmental care, we help you make a strong first impression while extending the life of your parking infrastructure."
+        imgSrc="/images/services/parkade-lot-cleaning/main.jpg" // ảnh tạm thời
       />
       <TabsSection items={Items} />
       <ServicesSection

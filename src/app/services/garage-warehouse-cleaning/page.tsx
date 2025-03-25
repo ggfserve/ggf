@@ -15,51 +15,44 @@ export const metadata: Metadata = getPageMeta('/services/garage-warehouse-cleani
 export default async function Page() {
   const Items = [
     {
-      title: 'Floor Degreasing',
+      title: 'Heavy-Duty Surface Cleaning',
       content: {
-        title: 'Floor Degreasing',
+        title: 'Heavy-Duty Surface Cleaning',
         description:
-          'We tackle oil, grease, and chemical buildup on concrete or industrial floors with powerful, eco-safe degreasing agents that restore safety and cleanliness.',
-        img: '/images/services/cleaning/1.png'
+          'We thoroughly clean concrete and epoxy floors in garages and warehouses using commercial-grade equipment that removes deep-seated dirt, dust, tire marks, oil spills, and chemical residue—restoring surface cleanliness and safety.',
+        img: '/images/services/garage-warehouse-cleaning/1.png'
       }
     },
     {
-      title: 'Dust & Debris Removal',
+      title: 'Oil & Chemical Spill Remediation',
       content: {
-        title: 'Dust & Debris Removal',
+        title: 'Oil & Chemical Spill Remediation',
         description:
-          'Our team removes layers of dust, debris, and clutter in hard-to-reach areas like corners, beams, and shelving units for a clean operational space.',
-        img: '/images/services/cleaning/2.jpg'
+          'Our trained technicians handle oil and chemical stain removal using eco-safe degreasers and absorbents. We ensure compliance with safety and environmental standards while protecting your floor and drainage systems.',
+        img: '/images/services/garage-warehouse-cleaning/2.png'
       }
     },
     {
-      title: 'Wall & Equipment Cleaning',
+      title: 'Dust & Debris Control',
       content: {
-        title: 'Wall & Equipment Cleaning',
+        title: 'Dust & Debris Control',
         description:
-          'We clean walls, doors, workstations, storage areas, and industrial equipment to maintain hygiene and improve working conditions.',
-        img: '/images/services/cleaning/3.jpg'
-      }
-    },
-    {
-      title: 'Safety & Compliance',
-      content: {
-        title: 'Safety & Compliance',
-        description:
-          'A clean garage or warehouse improves visibility, reduces fire risk, and meets health and safety regulations—keeping your staff safe and inspectors satisfied.',
-        img: '/images/services/cleaning/4.jpg'
+          'Using industrial vacuums and air-scrubbers, we remove fine dust particles and debris from hard-to-reach areas, improving air quality and reducing fire or slip hazards in high-traffic operational zones.',
+        img: '/images/services/garage-warehouse-cleaning/3.png'
       }
     }
   ];
 
+
   return (
     <>
       <MainSection
-        title="Garage & Warehouse Cleaning"
-        subTitle="Heavy-Duty Cleaning for Operational Efficiency"
-        text="GoGreen specializes in deep-cleaning industrial garages and warehouses. From floor degreasing to debris removal, we help maintain a clean, safe, and efficient facility."
-        imgSrc="/images/services/cleaning/main.png"
+        title="Garage & Warehouse Cleaning Services"
+        subTitle="Industrial-Grade Cleaning Solutions for Safe, Organized Workspaces"
+        text="GoGreen offers specialized cleaning services for garages, warehouses, and other industrial spaces. Our team removes oil stains, dust, debris, and contaminants using eco-safe methods and heavy-duty equipment. Whether it’s a commercial garage, storage facility, or distribution center, we help you maintain a cleaner, safer, and more efficient environment."
+        imgSrc="/images/services/garage-warehouse-cleaning/main.png" // ảnh tạm thời
       />
+
       <TabsSection items={Items} />
       <ServicesSection
         items={_services}

@@ -40,9 +40,8 @@ const DropdownMenu = ({
     >
       <Link
         href={href}
-        className={`${linkClass} ${
-          currentPath === href ? ' text-goGreen-green' : ''
-        }`}
+        className={`${linkClass} ${currentPath === href ? ' text-goGreen-green' : ''
+          }`}
         onClick={() => setIsOpen(!isOpen)}
       >
         {title}
@@ -76,7 +75,7 @@ const DropdownMenu = ({
                     {itemsInColumn.map((item, index) => (
                       <Link
                         href={item.link || '#'}
-                        className={`Accent uppercase hover:text-goGreen-green transition-colors duration-300 ease-in-out 
+                        className={`Accent uppercase hover:text-goGreen-green transition-colors text-[14px] duration-300 ease-in-out 
             ${currentPath === item.link ? 'text-goGreen-green' : ''}`}
                         key={index}
                         onClick={() => setIsOpen(!isOpen)}

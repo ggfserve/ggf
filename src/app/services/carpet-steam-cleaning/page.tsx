@@ -16,51 +16,52 @@ export const metadata: Metadata = getPageMeta('/services/carpet-steam-cleaning')
 export default async function Page() {
   const Items = [
     {
-      title: 'Deep Cleaning',
+      title: 'Comprehensive Deep Carpet Cleaning',
       content: {
-        title: 'Deep Cleaning',
+        title: 'Comprehensive Deep Carpet Cleaning',
         description:
-          'We penetrate deep into carpet fibers to remove dirt, allergens, and tough stains using powerful steam technology.',
-        img: '/images/services/cleaning/1.png'
+          'Our advanced steam cleaning process goes far beyond surface-level dirt. We deeply penetrate carpet fibers to eliminate embedded dust, allergens, bacteria, and stubborn debris, restoring freshness and extending the life of your carpet. Ideal for high-traffic areas and commercial spaces in need of a thorough refresh.',
+        img: '/images/services/cleaning/1.jpg'
       }
     },
     {
-      title: 'Stain Removal',
+      title: 'Professional Stain and Spot Removal',
       content: {
-        title: 'Stain Removal',
+        title: 'Professional Stain and Spot Removal',
         description:
-          'Our targeted stain treatment restores your carpet’s appearance by lifting persistent marks caused by pets, spills, and foot traffic.',
-        img: '/images/services/cleaning/2.jpg'
+          'We specialize in removing tough stains caused by pets, food, beverages, and everyday accidents. Using targeted treatment methods and eco-friendly agents, we lift even the most persistent marks without damaging carpet fibers, leaving your carpet looking revitalized and clean.',
+        img: '/images/services/carpet-steam-cleaning/1.jpg'
       }
     },
     {
-      title: 'Eco-Friendly Products',
+      title: 'Safe, Eco-Friendly Cleaning Solutions',
       content: {
-        title: 'Eco-Friendly Products',
+        title: 'Safe, Eco-Friendly Cleaning Solutions',
         description:
-          'We only use environmentally friendly products that are safe for kids and pets while still delivering powerful cleaning results.',
+          'We are committed to sustainability and your family’s health. That’s why we use only green-certified, non-toxic cleaning products that are safe for children, pets, and allergy-sensitive individuals. Our eco-conscious approach delivers powerful results without compromising safety or the environment.',
         img: '/images/services/cleaning/3.jpg'
       }
     },
     {
-      title: 'Fast Drying',
+      title: 'Quick-Dry Technology for Minimal Downtime',
       content: {
-        title: 'Fast Drying',
+        title: 'Quick-Dry Technology for Minimal Downtime',
         description:
-          'Our low-moisture process ensures your carpets dry quickly, minimizing downtime and disruption to your space.',
+          'Our low-moisture steam cleaning system ensures fast drying times, reducing the risk of mold and mildew while allowing you to get back to enjoying your space quickly. Perfect for businesses and homes that can’t afford lengthy drying periods or downtime.',
         img: '/images/services/cleaning/4.jpg'
       }
     }
   ];
 
 
+
   return (
     <>
       <MainSection
-        title="Carpet Steam Cleaning"
-        subTitle="Deep, Eco-Friendly Carpet Cleaning Services"
-        text="Refresh your indoor space with Go Green’s carpet steam cleaning. We eliminate dirt, allergens, and stains using green-certified technology."
-        imgSrc="/images/services/cleaning/main.png"
+        title="Premium Carpet Steam Cleaning Services"
+        subTitle="Deep-Clean, Eco-Friendly Solutions for a Healthier Home or Workspace"
+        text="Experience the power of professional carpet steam cleaning with Go Green. Our advanced technology eliminates deeply embedded dirt, allergens, and bacteria while using eco-friendly, non-toxic products that are safe for your family, pets, and the environment. Restore your carpet’s beauty, improve indoor air quality, and extend its lifespan — all with minimal disruption to your daily life."
+        imgSrc="/images/services/carpet-steam-cleaning/main.jpg"
       />
       <TabsSection items={Items} />
       <ServicesSection

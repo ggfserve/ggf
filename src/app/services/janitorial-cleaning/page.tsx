@@ -15,39 +15,39 @@ export const metadata: Metadata = getPageMeta('/services/janitorial-cleaning');
 export default async function Page() {
   const Items = [
     {
-      title: 'Daily Office Cleaning',
+      title: 'Daily & Scheduled Cleaning',
       content: {
-        title: 'Daily Office Cleaning',
+        title: 'Daily & Scheduled Cleaning',
         description:
-          'We ensure workspaces are clean and presentable every day with dusting, vacuuming, restroom sanitization, and trash removal.',
-        img: '/images/services/cleaning/1.png'
+          'Our janitorial services include daily, nightly, or custom cleaning schedules to keep your facility consistently clean and ready for business. We adapt to your operational hours and space usage for minimal disruption.',
+        img: '/images/services/janitorial-cleaning/1.jpg'
       }
     },
     {
-      title: 'After-Hours Service',
+      title: 'Restroom & Common Area Sanitation',
       content: {
-        title: 'After-Hours Service',
+        title: 'Restroom & Common Area Sanitation',
         description:
-          'Our flexible scheduling allows us to clean during off-hours to minimize disruptions and maintain operational flow.',
-        img: '/images/services/cleaning/2.jpg'
+          'We thoroughly disinfect high-touch areas, restrooms, kitchens, and shared spaces to prevent the spread of germs and maintain hygiene standards. All products are non-toxic and safe for regular use.',
+        img: '/images/services/janitorial-cleaning/2.jpg'
       }
     },
     {
-      title: 'Restroom Maintenance',
+      title: 'Green Cleaning Solutions',
       content: {
-        title: 'Restroom Maintenance',
+        title: 'Green Cleaning Solutions',
         description:
-          'Disinfected, fresh-smelling, and well-stocked restrooms are essential—we handle all aspects of janitorial restroom care.',
-        img: '/images/services/cleaning/3.jpg'
+          'We use certified green cleaning agents that are both effective and environmentally responsible—reducing chemical exposure and improving indoor air quality for employees, clients, and visitors.',
+        img: '/images/services/janitorial-cleaning/3.jpg'
       }
     },
     {
-      title: 'Green Cleaning Practices',
+      title: 'Trained & Trustworthy Staff',
       content: {
-        title: 'Green Cleaning Practices',
+        title: 'Trained & Trustworthy Staff',
         description:
-          'We use environmentally safe products and methods to provide a healthy workspace while reducing environmental impact.',
-        img: '/images/services/cleaning/4.jpg'
+          'Our janitorial teams are fully trained, background-checked, and supervised for quality control. We focus on attention to detail, reliability, and professionalism to deliver exceptional service every time.',
+        img: '/images/services/janitorial-cleaning/4.png'
       }
     }
   ];
@@ -55,10 +55,10 @@ export default async function Page() {
   return (
     <>
       <MainSection
-        title="Janitorial Cleaning"
-        subTitle="Professional, Reliable & Eco-Friendly"
-        text="GoGreen offers full-service janitorial solutions tailored to your facility's needs. From daily upkeep to specialized tasks, we keep your space pristine and productive."
-        imgSrc="/images/services/cleaning/main.png"
+        title="Janitorial Cleaning Services"
+        subTitle="Reliable, Professional Daily Cleaning for Your Business"
+        text="GoGreen delivers consistent, high-quality janitorial cleaning services tailored to your facility’s needs. From offices and schools to medical centers and retail spaces, our trained staff ensures a spotless, hygienic, and welcoming environment—using eco-friendly products and detailed cleaning protocols to promote health, safety, and productivity."
+        imgSrc="/images/services/janitorial-cleaning/main.jpg" // ảnh tạm thời
       />
       <TabsSection items={Items} />
       <ServicesSection

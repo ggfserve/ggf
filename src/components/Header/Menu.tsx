@@ -1,14 +1,12 @@
 'use client';
 
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { MenuItem } from '@/types/types';
-import { ScrollExpandLine } from '../Animations';
-import { motion } from 'framer-motion';
 import { _industries, _services } from '@/utils/constants';
 import DropdownMenu from './DropdownMenu';
 import { MenuHeader } from '@/utils/URL';
+import DropdownMenuServices from './DropdownMenuServices';
 
 const Menu = () => {
   const pathname = usePathname();
@@ -34,6 +32,47 @@ const Menu = () => {
     'We maintain competitive pricing and unwavering quality and are committed to reducing environmental impact and protecting people`s health.';
   const servicesContent =
     'Your premier choice for sustainable cleaning and comprehensive facility maintenance services in Edmonton.';
+  const groupedMenuItems: any = [
+    {
+      groupTitle: '🧹 Cleaning Services',
+      items: [
+        _services.find((s) => s.title === 'Cleaning'),
+        _services.find((s) => s.title === 'Residential Cleaning'),
+        _services.find((s) => s.title === 'Commercial Floor Cleaning'),
+        _services.find((s) => s.title === 'Janitorial Cleaning'),
+        _services.find((s) => s.title === 'Carpet Steam Cleaning'),
+        _services.find((s) => s.title === 'Window Cleaning'),
+      ].filter(Boolean)
+    },
+    {
+      groupTitle: '🛠 Specialized Cleaning',
+      items: [
+        _services.find((s) => s.title === 'Post-Construction Cleaning'),
+        _services.find((s) => s.title === 'Disinfection & Sanitization'),
+        _services.find((s) => s.title === 'Garage & Warehouse Cleaning'),
+        _services.find((s) => s.title === 'Underground Parkade & Lot Cleaning'),
+        _services.find((s) => s.title === 'Driveway Pressure Wash & Sealing'),
+        _services.find((s) => s.title === 'Building Pressure Washing'),
+        _services.find((s) => s.title === 'Outdoor Building Maintenance'),
+      ].filter(Boolean)
+    },
+    {
+      groupTitle: '🏭 Industries Served',
+      items: _industries.map((item) => ({
+        title: item.title,
+        link: item.link
+      }))
+    },
+    {
+      groupTitle: '🔧 Other Services',
+      items: [
+        _services.find((s) => s.title === 'Integrated Facility'),
+        _services.find((s) => s.title === 'Environmental'),
+        _services.find((s) => s.title === 'Specialized Services'),
+        _services.find((s) => s.title === 'Junk Removal'),
+      ].filter(Boolean)
+    }
+  ];
 
   return (
     <>
@@ -45,14 +84,17 @@ const Menu = () => {
         linkClass={linkClass}
         currentPath={pathname}
       />
-      <DropdownMenu
+      <DropdownMenuServices
         title="Services and Industries"
         content={servicesContent}
         href="/services"
-        menuItems={[..._services, ..._industries]}
+        menuItems={groupedMenuItems}
         linkClass={linkClass}
         currentPath={pathname}
       />
+      <Link href="/blogs" className={`${linkClass} ${pathname === '/blogs' ? ' text-goGreen-green' : ''}`}>
+        Blogs
+      </Link>
       {MenuHeader.map((item, index) => (
         <div key={index}>
           <Link

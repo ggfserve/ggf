@@ -195,3 +195,98 @@ export const _industries = [
     img: '/images/industries/recreational/banner.png'
   }
 ];
+
+// lib/data/blogPosts.ts
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  publishedAt: string;
+  readingTime?: string;
+  category?: string;
+}
+
+export const blogPosts: BlogPost[] = [
+  {
+    slug: 'eco-cleaning-benefits',
+    title: 'Top 5 Benefits of Eco-Friendly Cleaning for Your Business',
+    excerpt: 'Discover how green cleaning methods improve workplace health, sustainability, and employee productivity while protecting the environment.',
+    publishedAt: '2024-12-10',
+    readingTime: '5 min read',
+    category: 'Sustainability',
+    content: `
+      Eco-friendly cleaning has become a rising trend as businesses seek to reduce their environmental impact while maintaining high cleanliness standards. Here are the top 5 benefits of adopting green cleaning practices:
+
+      1. Improved Indoor Air Quality
+      Traditional cleaning products often contain harsh chemicals that can compromise indoor air quality. Green cleaning solutions use natural ingredients that don't release harmful VOCs, creating a healthier workplace environment.
+
+      2. Enhanced Employee Wellness
+      By eliminating exposure to harsh chemicals, eco-friendly cleaning practices help reduce allergic reactions, respiratory issues, and skin irritations among employees. This leads to fewer sick days and increased productivity.
+
+      3. Environmental Impact
+      Green cleaning products are biodegradable and packaged in recyclable containers, significantly reducing your business's environmental footprint. These products are made from renewable resources and don't contribute to water or air pollution.
+
+      4. Cost-Effective Solutions
+      While some green products may have a higher upfront cost, they often require less product to achieve the same results. Additionally, concentrated formulas and reduced packaging waste lead to long-term cost savings.
+
+      5. Brand Enhancement
+      Implementing eco-friendly cleaning practices demonstrates your commitment to sustainability, which can improve your company's image and appeal to environmentally conscious customers and employees.
+    `
+  },
+  {
+    slug: 'janitorial-vs-commercial-cleaning',
+    title: 'Janitorial vs Commercial Cleaning: What’s the Difference?',
+    excerpt: 'Learn the key differences between janitorial services and commercial cleaning to choose the best option for your facility needs.',
+    publishedAt: '2024-12-02',
+    readingTime: '4 min read',
+    category: 'Services',
+    content: `
+      Many people confuse janitorial services with commercial cleaning, but there are distinct differences between these two types of professional cleaning services.
+
+      1. Frequency and Scope
+      Janitorial services typically involve daily or regular maintenance tasks like emptying trash, vacuuming, and maintaining restrooms. Commercial cleaning, however, focuses on deeper, more specialized cleaning projects performed less frequently.
+
+      2. Skill Level and Training
+      Janitorial staff are trained in day-to-day cleaning and maintenance tasks. Commercial cleaners often require specialized training and equipment for specific services like floor stripping, carpet extraction, or high-rise window cleaning.
+
+      3. Equipment and Resources
+      Janitorial services usually use standard cleaning equipment and supplies. Commercial cleaning services invest in specialized equipment and industrial-grade cleaning solutions for more intensive cleaning tasks.
+
+      4. Cost Structure
+      Janitorial services are typically contracted on a regular basis with monthly or annual agreements. Commercial cleaning services are often project-based or scheduled periodically for specific deep-cleaning needs.
+
+      5. Time of Service
+      Janitorial services usually occur during off-hours to maintain daily cleanliness. Commercial cleaning projects may require specific scheduling and can sometimes interrupt regular business operations.
+
+      Choosing between janitorial and commercial cleaning depends on your facility's specific needs, budget, and cleaning requirements. Many businesses benefit from combining both services for optimal facility maintenance.
+    `
+  },
+  {
+    slug: 'pressure-washing-tips',
+    title: 'When and Why You Should Invest in Pressure Washing',
+    excerpt: 'Understand how pressure washing restores exterior surfaces, prevents damage, and boosts curb appeal for your property.',
+    publishedAt: '2024-11-25',
+    readingTime: '3 min read',
+    category: 'Maintenance',
+    content: `
+      Pressure washing isn't just about improving appearance. It's a crucial maintenance task that can protect your property's value and prevent costly repairs.
+
+      1. Optimal Timing
+      Spring and fall are ideal seasons for pressure washing, removing winter grime or summer buildup. Regular cleaning prevents permanent staining and surface degradation.
+
+      2. Property Protection
+      Regular pressure washing removes harmful substances like mold, mildew, and algae that can damage building materials over time. This preventive maintenance extends the life of your exterior surfaces.
+
+      3. Cost Benefits
+      While pressure washing requires an initial investment, it prevents expensive repairs and replacements by maintaining your property's surfaces. It's much more cost-effective than replacing damaged materials.
+
+      4. Health Considerations
+      Pressure washing eliminates allergens, mold, and other harmful substances that can affect air quality and health. This is particularly important for commercial properties with high foot traffic.
+
+      5. Professional Results
+      While DIY pressure washing is possible, professional services ensure the right pressure levels and cleaning solutions for different surfaces, preventing damage while achieving optimal results.
+    `
+  }
+];

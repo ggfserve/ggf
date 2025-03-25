@@ -15,51 +15,53 @@ export const metadata: Metadata = getPageMeta('/services/building-pressure-washi
 export default async function Page() {
   const Items = [
     {
-      title: 'Exterior Surfaces',
+      title: 'Comprehensive Exterior Surface Cleaning',
       content: {
-        title: 'Exterior Surfaces',
+        title: 'Comprehensive Exterior Surface Cleaning',
         description:
-          'Remove years of dirt, grime, mold, and pollutants from building exteriors. Our pressure washing restores surfaces to their original appearance without damage.',
-        img: '/images/services/cleaning/1.png' // ảnh tạm thời
+          'Restore the original beauty of your building’s exterior with our deep-cleaning pressure washing. We remove years of accumulated dirt, mold, mildew, algae, and environmental pollutants without damaging your surfaces. Ideal for commercial façades, brick walls, concrete, and other exterior materials.',
+        img: '/images/services/building-pressure-washing/1.jpg'
       }
     },
     {
-      title: 'Eco-Safe Process',
+      title: 'Eco-Friendly & Safe Cleaning Practices',
       content: {
-        title: 'Eco-Safe Process',
+        title: 'Eco-Friendly & Safe Cleaning Practices',
         description:
-          'We use environmentally friendly detergents and water-efficient methods to clean effectively without harming surrounding landscaping or water systems.',
-        img: '/images/services/cleaning/2.jpg'
+          'Our process uses biodegradable, non-toxic detergents and water-efficient pressure washing techniques that are safe for surrounding landscaping, drainage systems, and the environment. We ensure every job meets our sustainability commitment without sacrificing cleaning performance.',
+        img: '/images/services/building-pressure-washing/2.jpg'
       }
     },
     {
-      title: 'High & Low Pressure',
+      title: 'High & Low Pressure Customization',
       content: {
-        title: 'High & Low Pressure',
+        title: 'High & Low Pressure Customization',
         description:
-          'From heavy-duty concrete cleaning to more delicate surfaces like stucco or siding, we adjust pressure accordingly to ensure safe, effective results.',
-        img: '/images/services/cleaning/3.jpg'
+          'We tailor our pressure settings to suit the surface being cleaned. From robust concrete to delicate stucco or painted siding, our technicians use the optimal pressure to ensure thorough cleaning without damage.',
+        img: '/images/services/building-pressure-washing/3.png'
       }
     },
     {
-      title: 'Graffiti & Stain Removal',
+      title: 'Graffiti, Oil & Rust Stain Removal',
       content: {
-        title: 'Graffiti & Stain Removal',
+        title: 'Graffiti, Oil & Rust Stain Removal',
         description:
-          'We specialize in removing graffiti, rust, oil stains, and other persistent surface blemishes—restoring a clean, professional look to your property.',
-        img: '/images/services/cleaning/4.jpg'
+          'We eliminate unsightly surface blemishes including graffiti, rust, grease, and oil stains using specialized solutions and targeted high-pressure techniques—restoring your property’s clean and professional appearance.',
+        img: '/images/services/building-pressure-washing/4.png'
       }
     }
   ];
 
+
   return (
     <>
       <MainSection
-        title="Building Pressure Washing"
-        subTitle="Restore Your Building's Curb Appeal"
-        text="GoGreen offers powerful pressure washing services to remove grime, mold, and buildup from your building’s exterior. Make a lasting impression with a clean, professional look."
-        imgSrc="/images/services/cleaning/main.png" // ảnh tạm thời
+        title="Professional Building Pressure Washing Services"
+        subTitle="Revitalize Your Property’s Exterior with Safe, Effective Power Washing"
+        text="At GoGreen, we specialize in restoring the appearance and integrity of building exteriors. Our pressure washing service removes years of built-up dirt, grime, mold, and pollutants using eco-safe, non-damaging techniques. Whether it's concrete, stucco, or siding, we ensure your building makes a strong, lasting first impression."
+        imgSrc="/images/services/building-pressure-washing/main.jpg" // ảnh tạm thời
       />
+
       <TabsSection items={Items} />
       <ServicesSection
         items={_services}

@@ -17,51 +17,53 @@ export const metadata: Metadata = getPageMeta('/services/residential-cleaning');
 export default async function Page() {
   const Items = [
     {
-      title: 'Whole Home Cleaning',
+      title: 'Recurring Home Cleaning',
       content: {
-        title: 'Whole Home Cleaning',
+        title: 'Recurring Home Cleaning',
         description:
-          'Our comprehensive cleaning covers every corner of your home — from bedrooms to kitchens and bathrooms — ensuring a spotless living environment.',
-        img: '/images/services/cleaning/1.png' // ảnh tạm
+          'We offer flexible recurring cleaning plans—weekly, bi-weekly, or monthly—tailored to your lifestyle and preferences. From kitchens and bathrooms to bedrooms and living areas, we keep your home consistently fresh and welcoming.',
+        img: '/images/services/cleaning/1.png'
       }
     },
     {
-      title: 'Eco-Friendly Products',
+      title: 'Deep Cleaning Services',
       content: {
-        title: 'Eco-Friendly Products',
+        title: 'Deep Cleaning Services',
         description:
-          'We only use non-toxic, biodegradable cleaning products that are safe for children, pets, and the environment.',
-        img: '/images/services/cleaning/2.jpg' // ảnh tạm
+          'Our deep cleaning service targets areas often overlooked in routine cleaning—baseboards, behind appliances, interior windows, and more. Ideal for seasonal cleaning, move-ins, or post-renovation resets.',
+        img: '/images/services/cleaning/2.jpg'
       }
     },
     {
-      title: 'Scheduled Services',
+      title: 'Green Cleaning Products',
       content: {
-        title: 'Scheduled Services',
+        title: 'Green Cleaning Products',
         description:
-          'We offer flexible cleaning schedules — weekly, bi-weekly, or monthly — to fit your lifestyle and ensure consistent cleanliness.',
-        img: '/images/services/cleaning/3.jpg' // ảnh tạm
+          'We use eco-certified, non-toxic, and biodegradable cleaning products that are safe for children, pets, and allergy-sensitive individuals. Clean doesn’t have to mean harsh chemicals.',
+        img: '/images/services/cleaning/3.jpg'
       }
     },
     {
-      title: 'Move In/Out Cleaning',
+      title: 'Trusted, Trained Professionals',
       content: {
-        title: 'Move In/Out Cleaning',
+        title: 'Trusted, Trained Professionals',
         description:
-          'Whether you’re moving in or out, our deep cleaning services will leave the space fresh, sanitized, and ready for its next chapter.',
-        img: '/images/services/cleaning/4.jpg' // ảnh tạm
+          'Our cleaners are background-checked, insured, and professionally trained. You can count on respectful, detail-oriented service every time we enter your home.',
+        img: '/images/services/cleaning/4.jpg'
       }
     }
   ];
 
+
   return (
     <>
       <MainSection
-        title="Residential Cleaning"
-        subTitle="Eco-Friendly Cleaning for a Healthier Home"
-        text="GoGreen provides safe, effective, and tailored residential cleaning services to make your home shine while protecting your family and the planet."
-        imgSrc="/images/services/cleaning/main.png" // ảnh tạm
+        title="Residential Cleaning Services"
+        subTitle="Eco-Friendly Cleaning for a Healthier, Happier Home"
+        text="Enjoy a spotless, stress-free living space with GoGreen’s professional residential cleaning services. Whether it’s regular upkeep or a deep seasonal refresh, our trained cleaners use safe, non-toxic products to clean your home from top to bottom—ensuring comfort, hygiene, and peace of mind for you and your family."
+        imgSrc="/images/services/cleaning/main.png" // ảnh tạm thời
       />
+
       <TabsSection items={Items} />
       <ServicesSection
         items={_services}
