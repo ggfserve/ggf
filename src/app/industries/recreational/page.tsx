@@ -55,7 +55,7 @@ export default async function Page() {
             </p>
           </>
         ),
-        img: '/images/industries/recreational/2.jpg'
+        img: '/images/industries/recreational/2.png'
       }
     },
     {

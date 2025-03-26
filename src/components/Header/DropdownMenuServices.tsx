@@ -27,16 +27,6 @@ const DropdownMenuServices = ({
     menuItems: MenuGroup[];
 }) => {
     const [isOpen, setIsOpen] = useState(false);
-
-    useEffect(() => {
-        if (isOpen) {
-            document.documentElement.style.overflow = 'hidden';
-            document.body.style.paddingRight = '9px';
-        } else {
-            document.documentElement.style.overflow = '';
-            document.body.style.paddingRight = '';
-        }
-    }, [isOpen]);
     return (
         <div
             onMouseEnter={() => setIsOpen(true)}
@@ -52,13 +42,13 @@ const DropdownMenuServices = ({
             </Link>
 
             <motion.div
-                className="fixed w-screen bg-white flex flex-col items-center justify-start z-40 left-0 top-[128px] overflow-hidden"
+                className="fixed w-screen bg-white flex flex-col items-center justify-start z-40 left-0 top-[118px] overflow-hidden"
                 initial={{ maxHeight: 0 }}
                 animate={{ maxHeight: isOpen ? '100%' : 0 }}
                 transition={{ duration: 0.3 }}
             >
-                <div className="container">
-                    <div className="grid grid-cols-[1fr_3fr] gap-4 py-7 overflow-y-auto">
+                <div className="container pb-5">
+                    <div className="grid grid-cols-[1fr_3fr] gap-4 overflow-y-auto">
                         {/* Left column: Title + Description */}
                         <div>
                             <h4 className="h4 mb-2">{title}</h4>
@@ -76,14 +66,14 @@ const DropdownMenuServices = ({
                         <div className="grid grid-cols-4 gap- relative pl-11 text-[16px]">
                             <ScrollExpandLine className="rounded-full" />
                             {menuItems.map((group, i) => (
-                                <div className="flex flex-col gap-2 pr-4" key={i}>
+                                <div className="flex flex-col gap-3 pr-4" key={i}>
                                     <h5 className="font-semibold text-goGreen-green mb-1">
                                         {group.groupTitle}
                                     </h5>
                                     {group.items.map((item, index) => (
                                         <Link
                                             href={item.link || '#'}
-                                            className={`Accent uppercase hover:text-goGreen-green transition-colors duration-300 ease-in-out text-[14px] ${currentPath === item.link ? 'text-goGreen-green' : ''
+                                            className={`Accent uppercase hover:text-goGreen-green transition-colors duration-300 ease-in-out text-[14px] leading-snug ${currentPath === item.link ? 'text-goGreen-green' : ''
                                                 }`}
                                             key={index}
                                             onClick={() => setIsOpen(false)}

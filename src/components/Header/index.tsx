@@ -18,7 +18,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-goGreen-mint py-[15px]">
+      <div className=" bg-goGreen-mint py-[6px]">
         <div className="container">
           <div className="flex justify-between items-center">
             <Link href="/" title="Go to Home">
@@ -31,7 +31,7 @@ const Header = () => {
                 alt="GoGreen"
               />
             </Link>
-            <nav className="flex gap-4 ml-auto max-lg:hidden justify-between mr-4 xl:mr-7">
+            <nav className="flex gap-8 ml-auto max-lg:hidden justify-between mr-4 xl:mr-7">
               <Menu />
             </nav>
 

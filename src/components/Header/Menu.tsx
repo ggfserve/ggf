@@ -75,7 +75,7 @@ const Menu = () => {
   ];
 
   return (
-    <>
+    <div className="flex items-center gap-8">
       <DropdownMenu
         title="About Us"
         content={aboutContent}
@@ -105,7 +105,7 @@ const Menu = () => {
           </Link>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

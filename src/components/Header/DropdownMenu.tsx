@@ -22,17 +22,6 @@ const DropdownMenu = ({
   }[];
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    if (isOpen) {
-      document.documentElement.style.overflow = 'hidden';
-      document.body.style.paddingRight = '9px';
-    } else {
-      document.documentElement.style.overflow = '';
-      document.body.style.paddingRight = '';
-    }
-  }, [isOpen]);
-
   return (
     <div
       onMouseEnter={() => setIsOpen(true)}
@@ -48,13 +37,13 @@ const DropdownMenu = ({
       </Link>
 
       <motion.div
-        className="fixed w-screen h-fit bg-white flex flex-col items-center justify-start z-40 left-0 top-[128px] overflow-hidden"
+        className="fixed w-screen h-fit bg-white flex flex-col items-center justify-start z-40 left-0 top-[110px] overflow-hidden"
         initial={{ maxHeight: 0 }}
         animate={{ maxHeight: isOpen ? '100%' : 0 }}
         transition={{ duration: 0.3 }}
       >
         <div className="container">
-          <div className="grid grid-cols-[1fr_3fr] gap-4 py-7 overflow-y-auto">
+          <div className="grid grid-cols-[1fr_3fr] gap-4 overflow-y-auto">
             <div className="">
               <h4 className="h4 mb-2">{title}</h4>
               <p className="mb-6">{content}</p>

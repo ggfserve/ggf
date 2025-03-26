@@ -38,7 +38,7 @@ export default async function Page() {
         title: 'Eco-Friendly & Streak-Free Finish',
         description:
           'We use purified water systems and biodegradable cleaning solutions that lift dirt and residue without leaving streaks or harming plants, pets, or surfaces.',
-        img: '/images/services/windowcleaning/3.jpg'
+        img: '/images/services/window-cleaning/3.png'
       }
     }
   ];

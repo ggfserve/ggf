@@ -25,12 +25,12 @@ export default async function Page() {
       }
     },
     {
-      title: 'Professional Stain and Spot Removal',
+      title: 'Quick-Dry Technology for Minimal Downtime',
       content: {
-        title: 'Professional Stain and Spot Removal',
+        title: 'Quick-Dry Technology for Minimal Downtime',
         description:
-          'We specialize in removing tough stains caused by pets, food, beverages, and everyday accidents. Using targeted treatment methods and eco-friendly agents, we lift even the most persistent marks without damaging carpet fibers, leaving your carpet looking revitalized and clean.',
-        img: '/images/services/carpet-steam-cleaning/1.jpg'
+          'Our low-moisture steam cleaning system ensures fast drying times, reducing the risk of mold and mildew while allowing you to get back to enjoying your space quickly. Perfect for businesses and homes that can’t afford lengthy drying periods or downtime.',
+        img: '/images/services/cleaning/4.jpg'
       }
     },
     {
@@ -40,15 +40,6 @@ export default async function Page() {
         description:
           'We are committed to sustainability and your family’s health. That’s why we use only green-certified, non-toxic cleaning products that are safe for children, pets, and allergy-sensitive individuals. Our eco-conscious approach delivers powerful results without compromising safety or the environment.',
         img: '/images/services/cleaning/3.jpg'
-      }
-    },
-    {
-      title: 'Quick-Dry Technology for Minimal Downtime',
-      content: {
-        title: 'Quick-Dry Technology for Minimal Downtime',
-        description:
-          'Our low-moisture steam cleaning system ensures fast drying times, reducing the risk of mold and mildew while allowing you to get back to enjoying your space quickly. Perfect for businesses and homes that can’t afford lengthy drying periods or downtime.',
-        img: '/images/services/cleaning/4.jpg'
       }
     }
   ];

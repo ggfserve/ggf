@@ -76,7 +76,28 @@ export default async function Page() {
         ),
         img: '/images/industries/commercial/3.webp'
       }
+    },
+    {
+      title: 'Bathroom Cleaning',
+      content: {
+        title: 'Bathroom Cleaning',
+        description: (
+          <>
+            <p>
+              GoGreen understands that bathrooms are one of the most critical areas in any facility when it comes to hygiene and cleanliness.
+            </p>
+            <p>
+              Our specialized bathroom cleaning services go beyond surface-level sanitation. We deep clean and disinfect every corner, including sinks, toilets, urinals, mirrors, partitions, floors, and high-touch areas, ensuring a fresh, spotless, and germ-free environment.
+            </p>
+            <p>
+              With eco-friendly products and attention to detail, we help you maintain a hygienic, odor-free restroom that reflects the overall professionalism and care of your business space.
+            </p>
+          </>
+        ),
+        img: '/images/industries/commercial/4.png'
+      }
     }
+
   ];
 
   return (
