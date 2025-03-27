@@ -58,7 +58,7 @@ export default async function Page() {
             </p>
           </>
         ),
-        img: '/images/services/specialized/2.jpg'
+        img: '/images/services/specialized/2.png'
       }
     },
     {
