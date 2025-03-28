@@ -22,8 +22,27 @@ export default async function Page() {
           'We use high-powered pressure washing to remove years of dirt, tire marks, algae, and oil buildup from concrete, asphalt, and stone driveways. Our process restores original color and texture without damaging the surface.',
         img: '/images/services/driveway-pressure-washing-sealing/1.png'
       }
+    },
+    {
+      title: 'Professional Sealant Application',
+      content: {
+        title: 'Professional Sealant Application',
+        description:
+          'We apply high-quality driveway sealants that protect against water, UV rays, and vehicle fluids. Our sealants enhance durability and leave a clean, satin finish that lasts.',
+        img: '/images/services/driveway-pressure-washing-sealing/2.png'
+      }
+    },
+    {
+      title: 'Eco-Friendly Cleaning Methods',
+      content: {
+        title: 'Eco-Friendly Cleaning Methods',
+        description:
+          'We use environmentally friendly detergents and water-saving techniques during the pressure washing process. Safe for pets, plants, and your property.',
+        img: '/images/services/driveway-pressure-washing-sealing/3.png'
+      }
     }
   ];
+
 
 
   return (

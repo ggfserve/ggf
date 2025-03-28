@@ -37,7 +37,7 @@ export default async function Page() {
             </p>
           </>
         ),
-        img: '/images/services/post-construction/1.jpg'
+        img: '/images/services/post-construction/1.png'
       }
     },
     {

@@ -29,7 +29,7 @@ export default async function Page() {
         title: 'High-Rise & Multi-Storey Access',
         description:
           'Our trained technicians use professional-grade equipment, ladders, and safety harnesses to clean hard-to-reach and upper-floor windows—safely and efficiently, with minimal disruption.',
-        img: '/images/services/window-cleaning/2.jpg'
+        img: '/images/services/window-cleaning/2.png'
       }
     },
     {

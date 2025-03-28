@@ -77,13 +77,13 @@ export const _services = [
     link: '/services/carpet-steam-cleaning',
     linkTitle: 'Carpet Steam Cleaning Services'
   },
-  {
-    title: 'Residential Cleaning',
-    description:
-      'Trusted residential cleaning solutions tailored to your schedule, ensuring a spotless home using safe and effective green products.',
-    link: '/services/residential-cleaning',
-    linkTitle: 'Residential Cleaning Services'
-  },
+  // {
+  //   title: 'Residential Cleaning',
+  //   description:
+  //     'Trusted residential cleaning solutions tailored to your schedule, ensuring a spotless home using safe and effective green products.',
+  //   link: '/services/residential-cleaning',
+  //   linkTitle: 'Residential Cleaning Services'
+  // },
   {
     title: 'Janitorial Cleaning',
     description:

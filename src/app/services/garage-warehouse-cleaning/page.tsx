@@ -23,24 +23,24 @@ export default async function Page() {
         img: '/images/services/garage-warehouse-cleaning/1.png'
       }
     },
-    {
-      title: 'Oil & Chemical Spill Remediation',
-      content: {
-        title: 'Oil & Chemical Spill Remediation',
-        description:
-          'Our trained technicians handle oil and chemical stain removal using eco-safe degreasers and absorbents. We ensure compliance with safety and environmental standards while protecting your floor and drainage systems.',
-        img: '/images/services/garage-warehouse-cleaning/2.png'
-      }
-    },
-    {
-      title: 'Dust & Debris Control',
-      content: {
-        title: 'Dust & Debris Control',
-        description:
-          'Using industrial vacuums and air-scrubbers, we remove fine dust particles and debris from hard-to-reach areas, improving air quality and reducing fire or slip hazards in high-traffic operational zones.',
-        img: '/images/services/garage-warehouse-cleaning/3.png'
-      }
-    }
+    // {
+    //   title: 'Oil & Chemical Spill Remediation',
+    //   content: {
+    //     title: 'Oil & Chemical Spill Remediation',
+    //     description:
+    //       'Our trained technicians handle oil and chemical stain removal using eco-safe degreasers and absorbents. We ensure compliance with safety and environmental standards while protecting your floor and drainage systems.',
+    //     img: '/images/services/garage-warehouse-cleaning/2.png'
+    //   }
+    // },
+    // {
+    //   title: 'Dust & Debris Control',
+    //   content: {
+    //     title: 'Dust & Debris Control',
+    //     description:
+    //       'Using industrial vacuums and air-scrubbers, we remove fine dust particles and debris from hard-to-reach areas, improving air quality and reducing fire or slip hazards in high-traffic operational zones.',
+    //     img: '/images/services/garage-warehouse-cleaning/3.png'
+    //   }
+    // }
   ];
 
 
