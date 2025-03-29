@@ -37,7 +37,7 @@ export const Form = ({ className = '' }: { className?: string }) => {
     }
 
     try {
-      const res = await fetch(process.env.NEXT_PUBLIC_FORM_ENDPOINT!, {
+      const res = await fetch("https://formspree.io/f/movenwvy", {
         method: 'POST',
         headers: {
           Accept: 'application/json',
