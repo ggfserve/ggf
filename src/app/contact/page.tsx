@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import { getPageMeta } from '@/utils/getMeta';
 import { MainSection } from '@/components/MainSection';
 
-import { Form } from '@/components/ContacFormSection/Form';
 import { FAQ } from '@/components/FAQ';
 import { MapSection } from './components/MapSection';
 import { SecondSection } from './components/SecondSection';
+import Form from '@/components/ContacFormSection/Form';
 
 export const metadata: Metadata = getPageMeta('/contact');
 

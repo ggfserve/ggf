@@ -1,6 +1,6 @@
 import { ScrollExpandLine } from '@/components/Animations';
 import { Button } from '../UI/button';
-import { Form } from './Form';
+import Form  from './Form';
 
 export const ContacFormSection = async () => {
   return (

@@ -1,9 +1,13 @@
 'use client';
 import { Button } from '@/components/UI/button';
 import { useRef, useState } from 'react';
-
 import OverlayMessage from '@/components/UI/OverlayMessage';
-export const Form = ({ className = '' }: { className?: string }) => {
+
+interface FormOldProps {
+  className?: string;
+}
+
+const FormOld = ({ className = '' }: FormOldProps) => {
   // State for the form fields
   const [loading, setLoading] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
@@ -37,14 +41,18 @@ export const Form = ({ className = '' }: { className?: string }) => {
     }
 
     try {
-      // Make sure to use the complete Formspree endpoint URL
-      const res = await fetch("https://formspree.io/f/movenwvy", {
+      const res = await fetch("/api/send", {
         method: 'POST',
         headers: {
-          'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(Object.fromEntries(formData)),
+        body: JSON.stringify({
+          fullName: formData.get('fullName'),
+          companyName: formData.get('companyName'),
+          email: formData.get('email'),
+          phone: formData.get('phone'),
+          message: formData.get('message')
+        }),
       });
 
       if (res.ok) {
@@ -159,3 +167,5 @@ export const Form = ({ className = '' }: { className?: string }) => {
     </form>
   );
 };
+
+export default FormOld;
