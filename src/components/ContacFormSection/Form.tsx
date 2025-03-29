@@ -42,7 +42,7 @@ const FormOld = ({ className = '' }: FormOldProps) => {
 
     try {
       // Make sure to use the complete Formspree endpoint URL
-      const res = await fetch("https://formspree.io/f/movenwvy", {
+      const res = await fetch("https://formspree.io/f/mjkyeoqp", {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
