@@ -37,23 +37,25 @@ export const Form = ({ className = '' }: { className?: string }) => {
     }
 
     try {
+      // Make sure to use the complete Formspree endpoint URL
       const res = await fetch("https://formspree.io/f/movenwvy", {
         method: 'POST',
         headers: {
-          Accept: 'application/json',
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
         },
-        body: formData,
+        body: JSON.stringify(Object.fromEntries(formData)),
       });
-
-      const result = await res.json();
 
       if (res.ok) {
         setSuccess(true);
         form.reset();
       } else {
+        console.error('Form submission failed:', await res.text());
         setError(true);
       }
     } catch (err) {
+      console.error('Form submission error:', err);
       setError(true);
     } finally {
       setLoading(false);
