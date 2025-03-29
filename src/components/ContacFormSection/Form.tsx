@@ -1,12 +1,8 @@
 'use client';
-
 import { Button } from '@/components/UI/button';
-import { sendContactForm } from '@/services/actions';
 import { useRef, useState } from 'react';
 
 import OverlayMessage from '@/components/UI/OverlayMessage';
-import { validatePhoneNumber } from '@/utils/validators';
-
 export const Form = ({ className = '' }: { className?: string }) => {
   // State for the form fields
   const [loading, setLoading] = useState(false);
@@ -21,41 +17,49 @@ export const Form = ({ className = '' }: { className?: string }) => {
   const style_input =
     'rounded-[10px] w-full border-[1px] border-goGreen-green h-[59px] px-6 text-goGreen-green';
 
-  const handleSubmit = async (event: { preventDefault: () => void }) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     setLoading(true);
-    if (formRef.current) {
-      try {
-        const phone = (
-          formRef.current?.elements.namedItem('phone') as HTMLInputElement
-        )?.value;
-        if (!validatePhoneNumber(phone)) {
-          setPhoneError('Invalid phone number');
-          setLoading(false);
-          return;
-        }
+    setError(false);
+    setSuccess(false);
+    setPhoneError('');
 
-        const formData = new FormData(formRef.current);
-        const res = await sendContactForm(formData);
+    const form = formRef.current;
+    if (!form) return;
 
-        if (res.errors) {
-          // Handle validation errors here
-          console.error(res.errors);
-          setError(true);
-        } else {
-          setSuccess(true);
-          setTimeout(() => setSuccess(false), 5000);
-          formRef.current?.reset();
-        }
-      } catch (error) {
-        console.error(error);
+    const formData = new FormData(form);
+
+    const phone = formData.get('phone')?.toString() || '';
+    if (!/^\d{8,15}$/.test(phone)) {
+      setPhoneError('Phone number must be 8-15 digits.');
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const res = await fetch(process.env.NEXT_PUBLIC_FORM_ENDPOINT!, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+        },
+        body: formData,
+      });
+
+      const result = await res.json();
+
+      if (res.ok) {
+        setSuccess(true);
+        form.reset();
+      } else {
         setError(true);
-      } finally {
-        setLoading(false);
-        setTimeout(() => setError(false), 5000);
       }
+    } catch (err) {
+      setError(true);
+    } finally {
+      setLoading(false);
     }
   };
+
   return (
     <form
       ref={formRef}
