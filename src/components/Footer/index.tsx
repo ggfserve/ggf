@@ -58,7 +58,7 @@ const Footer = () => {
                         Business Hours:
                       </p>
                       <p>
-                        9:00 AM – 7:00 PM <br /> Monday to Friday
+                        9:00 AM – 5:00 PM <br /> Mon to Fri
                       </p>
                     </div>
                   )}

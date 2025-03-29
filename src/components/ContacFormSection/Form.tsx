@@ -41,18 +41,14 @@ const FormOld = ({ className = '' }: FormOldProps) => {
     }
 
     try {
-      const res = await fetch("/api/send", {
+      // Make sure to use the complete Formspree endpoint URL
+      const res = await fetch("https://formspree.io/f/movenwvy", {
         method: 'POST',
         headers: {
+          'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-          fullName: formData.get('fullName'),
-          companyName: formData.get('companyName'),
-          email: formData.get('email'),
-          phone: formData.get('phone'),
-          message: formData.get('message')
-        }),
+        body: JSON.stringify(Object.fromEntries(formData)),
       });
 
       if (res.ok) {

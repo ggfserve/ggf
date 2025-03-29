@@ -8,7 +8,7 @@ export const _addressLink =
   'https://www.google.com/maps/place/Go+Green+Facilities+Services+%26+Janitorial/@53.4653411,-113.4825403,15z/data=!4m6!3m5!1s0x2ab98b72a4d7da87:0x30b64c0885a3f145!8m2!3d53.4653411!4d-113.4825403!16s%2Fg%2F11y4643dqq?entry=ttu';
 export const _googleLink = 'https://maps.app.goo.gl/XyWQgWHjMVw1kRbn7';
 export const _facebook = 'https://www.facebook.com/ggfservices/';
-export const _instagram = 'https://www.instagram.com/ggfservices/';
+export const _instagram = 'https://www.instagram.com/ggfservicesyeg';
 
 export const _linkedin =
   'https://www.linkedin.com/company/go-green-facilities-services/';
