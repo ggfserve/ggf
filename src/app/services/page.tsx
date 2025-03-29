@@ -13,7 +13,7 @@ import { TextAndImagesSection } from '@/components/UI/TextAndImagesSection';
 import { _industries, _services } from '@/utils/constants';
 
 export const metadata: Metadata = getPageMeta('/services');
-
+ // services page meta data
 export default async function Page() {
   return (
     <>
