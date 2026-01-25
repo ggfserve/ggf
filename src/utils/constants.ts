@@ -2,8 +2,8 @@ export const _siteUrl =
   process.env.NEXT_PUBLIC_URL_BASE || 'http://localhost:3047';
 
 export const _mail = 'Admin@ggfservices.com';
-export const _phone = '(780) 437-1011';
-export const _address = '15397 117 Ave, # 204';
+export const _phone = '780-887-4843';
+export const _address = 'Address: Unit 208-15397 117 Ave NW, Edmonton, AB T5M 3X4';
 export const _addressLink =
   'https://www.google.com/maps/place/Go+Green+Facilities+Services+%26+Janitorial/@53.4653411,-113.4825403,15z/data=!4m6!3m5!1s0x2ab98b72a4d7da87:0x30b64c0885a3f145!8m2!3d53.4653411!4d-113.4825403!16s%2Fg%2F11y4643dqq?entry=ttu';
 export const _googleLink = 'https://maps.app.goo.gl/XyWQgWHjMVw1kRbn7';
