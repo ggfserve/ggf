@@ -36,8 +36,8 @@ export const MenuHeaderMobile: MenuItem[] = [
   },
 
   {
-    title: 'Blog',
-    link: '/blog'
+    title: 'Blogs',
+    link: '/blogs'
   }
 ];
 
@@ -53,7 +53,7 @@ export const MenuFooter: MenuItem[] = [
 
   {
     title: 'Blog',
-    link: '/blog'
+    link: '/blogs'
   },
   {
     title: 'Contact Us',
