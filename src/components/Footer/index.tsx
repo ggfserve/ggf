@@ -13,7 +13,11 @@ import { LocateIcon } from '../UI/SVG/LocateIcon';
 import { MailIcon } from '../UI/SVG/MailIcon';
 import { PhoneIcon } from '../UI/SVG/PhoneIcon';
 import { Socials } from '../UI/Socials';
+
 const Footer = () => {
+  // calculate the year dynamically
+  const currentYear = new Date().getFullYear();
+
   const menuColumns = MenuFooter.reduce<MenuItem[][]>(
     (acc, menuItem, index) => {
       const columnIndex = Math.floor(index / 4);
@@ -99,9 +103,18 @@ const Footer = () => {
         <div className="container">
           <div className="flex justify-between items-center max-md:flex-col gap-4">
             {' '}
+            {/* UPDATED SECTION BELOW */}
             <p className="text-white text-center ">
-              Copyright 2024 © GoGreen. Full-stack web application
+              © {currentYear} GoGreen | Powered By{' '}
+              <Link
+                href="https://theorderguys.com/edmonton-website-design/"
+                target="_blank"
+                className="hover:text-goGreen-green transition-colors duration-300"
+              >
+                Edmonton Website Design
+              </Link>
             </p>
+            {/* END UPDATED SECTION */}
             <div className="flex gap-4 items-center justify-around sm:justify-end">
               <Socials />
             </div>
@@ -110,6 +123,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};   
+};
 
 export default Footer;
